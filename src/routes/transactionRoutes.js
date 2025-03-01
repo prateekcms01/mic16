@@ -4,7 +4,7 @@ const router = express.Router();
 const { authenticateToken } = require("../middleware/auth.middleware");
 router.post(
   "/record-transaction",
-  //   authenticateToken,
+  authenticateToken,
   transactionController.recordTransaction
 );
 

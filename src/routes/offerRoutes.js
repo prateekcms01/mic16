@@ -4,7 +4,7 @@ const router = express.Router();
 const { authenticateToken } = require("../middleware/auth.middleware");
 router.post(
   "/send-offer",
-  //   authenticateToken,
+  authenticateToken,
   offerController.sendOfferNotification
 );
 

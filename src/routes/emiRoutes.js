@@ -4,7 +4,7 @@ const { authenticateToken } = require("../middleware/auth.middleware");
 const router = express.Router();
 router.post(
   "/send-emi-reminder",
-  //   authenticateToken,
+  authenticateToken,
   emiController.sendEMIReminder
 );
 
